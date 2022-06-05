@@ -1,0 +1,68 @@
+---
+title: hompage
+date: 2022-06-05 14:06:56 -500
+categories: [website, jekyll]
+tags: [homepage, website, jekyll, blog]     # TAG names should always be lowercase
+---
+
+# Hompage
+Hello and welcome to my hompage!
+
+In this article I will show you how I build it and how you can do it to!
+
+Keep in mind, was not my idea it was thanks to [Techno Tim](https://www.youtube.com/watch?v=F8iOU1ci19Q&t=1096s).
+We will use the jekyll-theme-chirpy: [Github](https://github.com/cotes2020/jekyll-theme-chirpy) 
+
+## Before we Beginn
+Install Dependencies (`Ruby`, `RubyGems`, `Jekyll`, `Bundle`, `Git`):
+
+for Fedora:
+```Bash
+sudo dnf install ruby rubygems ruby-devel gcc gcc-c++ rpm-build
+```
+or for Arch:
+```Bash
+sudo pacman -S ruby ruby-rdoc gcc make
+```
+ then:
+```Bash
+sudo gem install jekyll bundler
+```
+
+## Step 1
+Create a Github Repository with the [Chripy Starter](https://github.com/cotes2020/chirpy-starter/generate) and if you want to host your site on Github(I recommend it) name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
+
+## Step 2
+Clone your Repo and go to the root of it and install the missing dependencies:
+```Bash
+bundle
+```
+
+## Step3
+##### Running a local server:
+```bash 
+bundle exec jekyll s
+```
+
+Or for Docker:
+```Bash
+docker run -it --rm \
+    --volume="$PWD:/srv/jekyll" \
+    -p 4000:4000 jekyll/jekyll \
+    jekyll serve
+```
+
+After a while, navigate to the site at [http://localhost:4000](http://localhost:4000/).
+
+Now you can customize your site as you want.
+
+## Hosting
+On Github Pages:
+### First 
+Make sure your Repo is set to public
+### Second 
+Commit your edited Repo to Github
+### Last
+Go to the Settings of your Repository and navigate to Pages, change the Source to `gh-pages` and you are done!
+
+__You can visit your site at `<GH_USERNAME>.github.io`. __
