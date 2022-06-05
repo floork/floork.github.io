@@ -3,18 +3,25 @@
 -
   type: github
   icon: 'fab fa-github'
--
-  type: twitter
-  icon: 'fab fa-twitter'
+#-
+#  type: twitter
+#  icon: 'fab fa-twitter'
 -
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
 -
-  type: rss
-  icon: 'fas fa-rss'
-  noblank: true
-
+  type: instagram
+  icon: 'fab fa-instagram'
+  url: 'https://instagram.com/mro_florian'
+-
+  type: spotify
+  icon: 'fab fa-spotify'
+  url: 'https://open.spotify.com/user/mrosflorian1?si=86Cp0rt-RZyTXOBLFL9qbA&utm_source=copy-link&nd=1'
+  #type: rss
+  #icon: 'fas fa-rss'
+  #noblank: true
+  
 # Uncomment and complete the url below to enable more contact options
 # -
 #   type: mastodon
